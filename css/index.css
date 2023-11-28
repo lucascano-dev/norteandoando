@@ -1,0 +1,253 @@
+:root {
+  --fonts-title: "Roboto Slab", serif;
+  --fonts-subtitle: "Roboto", sans-serif;
+  --fonts-body: "Roboto", sans-serif;
+}
+
+/* MAIN */
+
+body {
+  background-image: linear-gradient(91deg, rgba(72, 154, 78, 1) 5.2%, rgba(251, 206, 70, 1) 95.9%);
+  position: relative;
+}
+
+.titulo-index {
+  font-family: var(--fonts-title);
+  font-weight: 400;
+}
+
+.subtitulo-index {
+  font-family: var(--fonts-subtitle);
+  font-weight: 400;
+}
+
+.sombreado {
+  text-shadow: 1px 2px 2px black;
+}
+
+.colorFondo {
+  background-color: rgba(65, 65, 65, 0.5);
+  border-radius: 15px;
+}
+
+.card .index {
+  background-image: url(/img/tucuman1.jpg);
+}
+
+nav li {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+nav li a {
+  font-family: var(--fonts-title);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.carousel1 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.titulo1 {
+  text-align: center;
+  font-family: var(--fonts-title);
+  font-weight: 400;
+}
+
+.encabezado1 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.card-entrada-index {
+  background-color: rgba(65, 65, 65, 0.5);
+  border-radius: 15px;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.cardindex {
+  display: flex;
+  justify-content: left;
+}
+
+.cardIndex:hover {
+  transition: 0.5ms;
+  transform: scaleY(1.5);
+}
+
+.asideIndex {
+  top: 64px;
+}
+
+.cardImagen1 {
+  background-image: url(../img/Tucuman2.jpg);
+  width: 100%;
+}
+
+.cardImagen2 {
+  background-image: url(../img/Salta2.jpg);
+}
+
+.cardImagen3 {
+  background-image: url(../img/jujuy2.jpg);
+}
+
+.cardImagen4 {
+  background-image: url(../img/Santiago2.jpg);
+}
+
+.cardImagen5 {
+  background-image: url(../img/Catamarca.jpg);
+}
+
+.card {
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5em 0;
+  height: 300px;
+  text-align: center;
+  color: #f3f3f3;
+  text-shadow: 1px 2px 2px black;
+  overflow: hidden;
+  transition: 0.5s;
+  object-fit: cover;
+  margin: 5vw 0;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.main-index {
+  background-color: rgba(107, 105, 105, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 320px) {
+  .carousel1 {
+    display: none;
+  }
+  .contenedorPrincipal {
+    margin-top: 8em;
+  }
+}
+
+/* Aside */
+
+.lupa {
+  margin: 2em;
+}
+
+.botonEntrada {
+  margin: 5px 0;
+}
+
+.botonEntrada:hover {
+  color: green;
+}
+
+.carrouselAside {
+  margin-top: 1em;
+}
+
+/* Footer */
+footer {
+    /* position:absolute;
+    top: 100%; */
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style-type: none;
+}
+.logo {
+  margin: 1vw auto !important;
+}
+
+/** INICIO NAVBAR y MODAL **/
+.navbar {
+  background-color: rgba(72, 154, 78, 1);
+  border-bottom: 2px solid rgba(251, 251, 251, 0.5);
+}
+
+.navbar a {
+  color: white;
+  font-family: var(--fonts-subtitle);
+  font-weight: 400;
+}
+
+.navbar a:hover {
+  color: yellow;
+  font-family: var(--fonts-body);
+  font-weight: 400;
+}
+
+.logo-navbar {
+  width: 150px;
+}
+
+.modal-content {
+  background-color: rgba(72, 154, 78, 1);
+  border: 2px solid rgba(251, 251, 251, 0.5);
+}
+
+.btn-suscribir {
+  font-family: var(--fonts-body);
+  font-weight: 400;
+}
+/** FIN NAVBAR y MODAL **/
+
+/* FOOTER */
+
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0;
+}
+
+.page-link {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(88, 166, 94));
+}
+
+.page-link:hover {
+  color: rgb(219, 226, 14);
+
+}
+
+li {
+  list-style-type: none;
+}
+
+.contenedorLogo {
+  margin: 3em 0;
+}
+
+.footerTur {
+  background-color: rgba(72, 154, 78, 1);
+  border-top: 1px solid #f3f3f3;
+}
+
+/* FIN FOOTER */

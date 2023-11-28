@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatile" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conócenos</title>
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" />
+    <link rel="stylesheet" href="../css/conocenos.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/btn-whatsapp.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+        <!-- FontAwesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+   <!-- INICIO NAVBAR y MODAL -->
+   <header class="fixed-top bar">
+    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+        <img class="logo-navbar" src="../img/Logo02.png" alt="Logo">
+        </a>
+        <div class="bg-dark">
+        <button class="burgerButton navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="container">
+        <div class="links collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./galeria.html">Destinos</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./conocenos.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-md-none" data-bs-toggle="modal" data-bs-target="#suscribeModal">Suscribirse</a>
+            </li>
+            </ul>
+            <button class="btn btn-suscribir btn-outline-warning d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#suscribeModal">Suscribirse</button>
+        </div>
+        </div>
+    </div>
+    </nav>
+</header>
+<div class="ventana-modal">
+  <div
+    class="modal fade text-white fw-semibold"
+    id="suscribeModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Suscribirse</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+              <input
+                type="text"
+                id="nombreyapellido"
+                minlength="5"
+                maxlength="40"
+                required
+                class="form-control border border-dark border-2"
+                aria-describedby="Help"
+              />
+              <div class="form-text text-white">Puedes poner un apodo</div>
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input
+                type="text"
+                minlength="5"
+                maxlength="40"
+                required
+                class="form-control border border-dark border-2"
+                id="inputAddress"
+                placeholder="Calle 123"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input
+                type="text"
+                minlength="5"
+                maxlength="40"
+                required
+                class="form-control border border-dark border-2"
+                id="inputCity"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">País</label>
+              <select id="inputState" class="form-select border border-dark border-2">
+                <option selected>País</option>
+                <option>Argentina</option>
+                <option>Bolivia</option>
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Ecuador</option>
+                <option>Paraguay</option>
+                <option>Uruguay</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                minlength="5"
+                maxlength="40"
+                required
+                class="form-control border border-dark border-2"
+                id="exampleInputEmail01"
+                aria-describedby="emailHelp"
+                placeholder="ejemplo@outlook.com"
+              />
+              <div id="emailHelp" class="form-text text-white">No divulgaremos tu email</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input
+                type="password"
+                minlength="8"
+                maxlength="18"
+                required
+                class="form-control border border-dark border-2"
+                id="exampleInputPassword01"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input border border-dark border-2" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">Deseo recibir actualizaciones por Email</label>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-light">Suscribirse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- FIN NAVBAR y MODAL -->
+  
+    <main class="contenedorMain mx-5">
+      <h1 class="heading">¿Quiénes somos?</h1>
+      <p>
+        Somos una empresa dinámica, especializada en organizar programas turísticos. Nuestros conocimientos nos permiten
+        adaptarnos a las nuevas exigencias de los clientes, satisfacer sus expectativas y lograr un viaje soñado, así
+        surge Norte Ando.</p>
+        <p>Te asesoramos y guiamos a que armes el viaje a tu medida, ofreciendote excursiones en diferentes destinos del
+        norte Argentino, dejando la elección en tus manos
+      </p>
+
+      <div class="containerConocenos">
+        <div class="maincard">
+          <div class="cardConocenos">
+            <div class="efect"></div>
+            <div class="content">
+              <div class="image">
+                <img src="../img/Cano Lucas Aaron.jpeg" alt="Cano Lucas" />
+              </div>
+              <div class="details">
+                <h2>
+                  Cano Lucas Aarón <br />
+                  <span> Scrum Master</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="maincard">
+          <div class="cardConocenos">
+            <div class="efect"></div>
+            <div class="content">
+              <div class="image">
+                <img src="../img/Colodro Anial.jpeg" alt="Colodro Anibal" />
+              </div>
+              <div class="details">
+                <h2>
+                  Alarcon Colodro Anibal <br />
+                  <span> Desarrollador</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="maincard">
+          <div class="cardConocenos">
+            <div class="efect"></div>
+            <div class="content">
+              <div class="image">
+                <img src="../img/Conrado Raul Adid.jpeg" alt="Conrado Raul" />
+              </div>
+              <div class="details">
+                <h2>
+                  Conrado Raul Adid <br />
+                  <span> Desarrollador</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="maincard">
+          <div class="cardConocenos">
+            <div class="efect"></div>
+            <div class="content">
+              <div class="image">
+                <img src="../img/Paz Marcelo Exequiel.png" alt="Paz Marcelo" />
+              </div>
+              <div class="details">
+                <h2>
+                  Paz Marcelo Exequiel<br />
+                  <span> Desarrollador</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="maincard">
+          <div class="cardConocenos">
+            <div class="efect"></div>
+            <div class="content">
+              <div class="image">
+                <img src="../img/Romero Tobias.jpeg" alt="Romero Agustin" />
+              </div>
+              <div class="details">
+                <h2>
+                  Romero Tobias Agustin <br />
+                  <span> Desarrollador</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="boton-whatsapp">
+      <span id="tooltip"><a class="" href="../pages/error404.html">¡Clic y chatea con nosotros!</a></span>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    
+      <!-- INICIA FOOTER -->
+      <footer class="container-fluid footerTur">
+        <div class="row">
+            <div class="col-xl-3 col-xs-12 col-md-6 text-center">
+                <div class="d-flex row m-2">
+                    <h4 class="footer-tittle mt-2 ms-3">Seguinos</h4>
+                    <a href="https://www.facebook.com" target="_blank" class="m-1 link"><i class="fa-brands fa-facebook mx-2" style="color: #005cfa;"></i>Facebook</a>
+                    <a href="https://www.x.com" target="_blank" class="m-1 link"><i class="fa-brands fa-x-twitter mx-2" style="color: #000000;"></i>Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank" class="m-1 link"><i class="fa-brands fa-instagram mx-2" style="color: #0f0410;"></i>Instragram</a>
+                    <a href="https://www.tiktok.com" target="_blank" class="m-1 link"><i class="fa-brands fa-tiktok mx-2" style="color: #0e1115;"></i>Tik tok</a>
+                </div>
+            </div>
+            <div class="col-xl-5 d-none d-xl-block ">
+                <div class="d-flex justify-content-center contenedorLogo parrafoImg">
+                    <a href="/"><img src="../img/Logo02.png" alt="logo de la pagina" width="160px" class="logo"></a>
+                </div>
+                
+            </div>
+            <div class="col-xl-4 d-none d-md-block col-md-6  text-center">
+                <div>
+                    <h4 class="footer-tittle mt-3 ms-4 redes">Soporte</h4>
+                    <ul>
+                        <li><a href="./conocenos.html" class="link">Acerca de nosotros</a></li>
+                        <li><a href="./error404.html" class="link">Preguntas frecuentes</a></li>
+                        <li><a href="./contacto.html" class="link">Contacto</a></li>
+                        <li><a href="./error404.html" class="link">Politica de privacidad</a></li>
+                        <li><a href="./error404.html" class="link">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <!-- FIN FOOTER -->
+
+  </body>
+</html>
