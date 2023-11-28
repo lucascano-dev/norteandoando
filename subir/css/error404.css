@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient( 91deg, rgba(72,154,78,1) 5.2%, rgba(251,206,70,1) 95.9% );
+}
+#container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* margin: 5vh 0; */
+	position: relative;
+    min-height: 100vh;
+}
+
+.heading {
+	color: white;
+	font-size: 120px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-heading {
+	color: white;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+article {
+	width: 80%;
+	color: black;
+	text-align: center;
+	margin-bottom: 1rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+		Arial, sans-serif;
+}
+
+
+.imagen-error {
+	height: 200px;
+}
+
+h2 {
+	margin-top: -10px;
+}
+
+
+
+.btnError {
+	cursor: pointer;
+	margin: auto;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px 20px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	transition: all 0.3s linear;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+		Arial, sans-serif;
+	border: 3px solid;
+}
+
+.botonRegresar {
+	color: black;
+	background-color: aliceblue;
+	cursor: pointer;
+	margin: auto;
+	font-weight: bold;
+	padding: 15px 20px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	transition: all 0.3s linear;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+		Arial, sans-serif;
+	border: 3px solid;
+	text-decoration: none;
+}
+
+.btnError:hover {
+	color: white;
+	background-color: black;
+
+}
+
+@media screen and ( max-width:1700px) {
+	.heading {
+		margin-top: 15vh;
+	}
+	
+  }
+
+  @media screen and ( max-width:768px) {
+	.heading {
+		margin: 15vh 0;
+		font-size: 4rem;
+	}
+	
+  }
+
+@media screen and(max-width:430px) {
+	.heading {
+		font-size: 25px;
+	}
+	.buttons {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.buttons {
+	margin-bottom: 30px;
+}
+
+footer {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(72, 154, 78, 1);
+    border-top: 1px solid #f3f3f3;
+
+}
+
+.icono-developers {
+	width: 30px;
+	border-radius: 50%;
+  }

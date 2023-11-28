@@ -1,0 +1,73 @@
+body {
+  background-image: linear-gradient(91deg, rgba(72, 154, 78, 1) 5.2%, rgba(251, 206, 70, 1) 95.9%);
+  /* background: linear-gradient( to right, rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% ); */
+  position: relative;
+  min-height: 100vh;
+}
+
+
+#opciones:hover {
+  color: orange !important;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  text-shadow: 1px 2px 2px black;
+}
+.roboto400 {
+  font-family: "Roboto", sans-serif;
+}
+.textosombra {
+  text-shadow: 1px 2px 2px black;
+}
+
+input::placeholder {
+  color: rgb(174, 174, 174) !important;
+}
+
+.imglogin {
+  background-image: url(../img/sintitulo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.p-modal {
+  font-family: "Roboto", sans-serif;
+}
+
+.fonditogris {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 450px) {
+  .botonRedes01 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 450px) {
+  .botonRedes02 {
+    display: none !important;
+  }
+}
+
+.botonRedes02 {
+  display: inline-flex;
+}
+
+main {
+  margin-top: 100px;
+}
+
+footer {
+  position: absolute;
+  top: 100%;
+  background-color: rgba(72, 154, 78, 1);
+  border-top: 1px solid #f3f3f3;
+
+}
+
+.icono-developers {
+  width: 30px;
+  border-radius: 50%;
+}
