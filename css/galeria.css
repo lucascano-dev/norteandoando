@@ -54,3 +54,8 @@ footer {
     font-family: var(--fonts-subtitle);
     font-weight: 400;
 }
+
+.icono-developers {
+    width: 30px;
+    border-radius: 50%;
+  }
